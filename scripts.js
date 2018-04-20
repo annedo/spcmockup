@@ -38,16 +38,22 @@ var menuToggle = getID("MenuToggle");
 var mainMenu = getID("ToggledMenu");
 var subMenuToggles = document.getElementsByClassName("submenu__toggle");
 var subMenus = document.getElementsByClassName("menu__submenu");
-var leftArrow = getID("LeftArrow");
-var rightArrow = getID("RightArrow");
-var carouselWindow = document.querySelector(".carousel");
-var carouselStrip = document.querySelector(".carousel__strip");
-var carouselItems = document.getElementsByClassName("carousel__item");
 
-carouselStrip.setAttribute("style", "bottom:0px");
-var stripPosition = carouselStrip.style.bottom;
-var stripPosFloat = parseFloat(stripPosition.substring(0, stripPosition.length - 2));
-var currCarouselIndex = 0;
+if (window.location.pathname == "/") {
+	var leftArrow = getID("LeftArrow");
+	var rightArrow = getID("RightArrow");
+	var carouselWindow = document.querySelector(".carousel");
+	var carouselStrip = document.querySelector(".carousel__strip");
+	var carouselItems = document.getElementsByClassName("carousel__item");
+	carouselStrip.setAttribute("style", "bottom:0px");
+	var stripPosition = carouselStrip.style.bottom;
+	var stripPosFloat = parseFloat(stripPosition.substring(0, stripPosition.length - 2));
+	var currCarouselIndex = 0;
+	addEvent(leftArrow, "click", prevImg);
+	addEvent(rightArrow, "click", nextImg);
+	addEvent(window, "load", sizeCarousel);
+	addEvent(window, "resize", sizeCarousel);
+}
 
 addEvent(menuToggle, "click", toggleMenu);
 
@@ -55,12 +61,9 @@ for (var i = 0; i < subMenuToggles.length; i++) {
 	addEvent(subMenuToggles[i], "click", toggleSubmenu);
 }
 
-addEvent(leftArrow, "click", prevImg);
-addEvent(rightArrow, "click", nextImg);
-addEvent(window, "resize", sizeCarousel);
 addEvent(window, "resize", navDisplay);
 addEvent(window, "load", navDisplay);
-addEvent(window, "load", sizeCarousel);
+
 
 
 function toggleMenu() {

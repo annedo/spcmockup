@@ -1,0 +1,132 @@
+/****************Main Content Styles******************/
+.hero {
+	background-image: url("/img/flowers.jpg");
+	background-repeat: no-repeat;
+	background-size: 100% auto;
+	background-size: cover;
+}
+
+.hero__content__container {
+	background-color:  rgba(255, 255, 255, 0.2);
+	height:280px;
+	max-width: 100%;
+	display: flex;
+	align-items: center;
+}
+.hero__content {
+	background-color: rgba(255,255,255,0.7);
+	padding: 10px;
+}
+
+.hero--redlink {
+	margin-top: 1.3rem;
+}
+
+.maingrid {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.maingrid__item {
+	width: 100%;
+	padding: 10px;
+}
+
+.carousel {
+	width: 100%;
+	height: 250px;
+	overflow: hidden;
+	background-color: red;
+}
+
+.carousel__strip {
+	position: relative;
+	bottom: 0px;
+	transition: 2s;
+}
+
+.carousel__item {
+	overflow: hidden;
+}
+
+.carousel--img {
+	width: 100%;
+}
+
+.carousel__control {
+	padding: 10px 0;
+	text-align: center;
+	font-size: 3rem;
+}
+
+#LeftArrow, #RightArrow {
+	cursor: pointer;
+}
+
+#LeftArrow:hover, #RightArrow:hover {
+	font-weight: 700;
+	color: #D83434;
+}
+
+/*******************************Media Queries****************************/
+@media screen and (min-width: 500px) {
+	.maingrid {
+		padding: 20px;
+	}
+
+	.carousel {
+		width: 75%;
+	}
+
+	.carousel__control {
+		width: 75%;
+	}
+}
+
+@media screen and (min-width: 768px) {
+	.hero {
+		background-repeat: no-repeat;
+	}
+
+	.hero__content__container {
+		background-color:  rgba(255, 255, 255, 0.3);
+		max-width: 100%;
+		height: 500px;
+		display: flex;
+		align-items: center;
+	}
+	.hero__content {
+		background-color: rgba(255,255,255,0.7);
+		padding: 50px 100px;
+	}
+
+	.maingrid {
+		padding: 20px 0;
+		flex-flow: row nowrap;
+	}
+
+	.maingrid__item {
+		max-width: 33%;
+	}
+
+	.carousel {
+		width: 100%;
+	}
+
+	.carousel__control {
+		width: 100%;
+	}
+}
+
+
+@media screen and (min-width: 1366px) {
+
+	.carousel {
+		width: 80%;
+	}
+
+	.carousel__control {
+		width: 80%;
+	}
+}
