@@ -1,43 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="utf-8">
-		<title>Melanie Nguyen Photography - Buy prints and schedule bookings</title>
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<link rel="stylesheet" href="https://use.typekit.net/fuh4hqc.css">
-		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-		<link rel="stylesheet" href="cssreset.css" type="text/css">
-		<link rel="stylesheet" href="index.css" type="text/css">
-		
-	</head>
+<!--#config errmsg="[Error: SSI not enabled for this server]" -->
+<!--#include virtual="/parts/head.html"-->
 	<body>
-		<header class="header menu--opened">
-			<div class="header__logo">
-				<a href="/"><img alt="Melanie Nguyen Photography Home" class="logo--img" src="img/wwlogo.png"></a>
-			</div>
-			<nav class="header__nav">
-				<div id="MenuToggle" class="nav--mobile menu--show"><a class="menu--link" href="#">MENU</a></div>
-				<ul id="ToggledMenu" class="nav__mainmenu menu--hide">
-					<li class="menu__item"><a class="menu--link" href="/news">Latest News</a></li>
-					<li class="menu__item"><a class="menu--link" href="/aboutme">About</a></li>
-					<li class="menu__item submenu__toggle">
-						<a class="menu--link" href="#">Art</a>
-						<ul class="menu__submenu menu--hide submenu--art">
-							<li class="submenu__item"><a class="submenu--link" href="/art/portfolio">Portfolio</a></li>
-							<li class="submenu__item"><a class="submenu--link" href="/art/gallery">Full Gallery</a></li>
-							<li class="submenu__item"><a class="submenu--link" href="/art/prints">Buy Prints</a></li>
-						</ul>
-					</li>
-					<li class="menu__item submenu__toggle">
-						<a class="menu--link" href="#">Contact</a>
-						<ul class="menu__submenu menu--hide submenu--contact">
-							<li class="submenu__item"><a class="submenu--link" href="/contact/email">Email Form</a></li>
-							<li class="submenu__item"><a class="submenu--link" href="/contact/book">Local Bookings</a></li>
-						</ul>
-					</li>
-				</ul>
-			</nav>
-		</header>
+		<!--#include virtual="/parts/header.html"-->
 		<main class="main">
 			<div class="hero">
 				<div class="hero__content__container">
@@ -79,47 +45,6 @@
 				</div>
 			</div>
 		</main>
-		<footer class="footer">
-			<div class="footer__sitecontents">
-				<h2>Site Contents</h2>
-				<ul class="sitecontents__social">
-					<li><a href="#" class="fa fa-instagram"></a></li>
-					<li><a href="#" class="fa fa-twitter"></a></li>
-					<li><a href="#" class="fa fa-facebook"></a></li>
-				</ul>				
-			</div>
-			<nav class="footer__nav">
-				<ul class="nav__mainmenu">
-					<li class="menu__item">
-						<h3><a class="menu--link" href="/">Home</a></h3>
-					</li>
-					<li class="menu__item">
-						<h3><a class="menu--link" href="/news/2018-04-01-SPC">Latest News</a></h3>
-						<ul>
-							<li><a class="menu--link" href="/news/archives">Archives</a></li>
-						</ul>
-					</li>
-					<li class="menu__item">
-						<h3><a class="menu--link" href="/aboutme">About</a></h3>
-					</li>
-					<li class="menu__item">
-						<h3><a class="menu--link" href="#">Art</a></h3>
-						<ul>
-							<li><a class="menu--link" href="/art/portfolio">Portfolio</a></li>
-							<li><a class="menu--link" href="/art/gallery">Full Gallery</a></li>
-							<li><a class="menu--link" href="/art/prints">Buy Prints</a></li>
-						</ul>
-					</li>
-					<li class="menu__item">
-						<h3><a class="menu--link" href="#">Contact</a></h3>
-						<ul>
-							<li><a class="menu--link" href="/contact#EmailForm">Email Form</a></li>
-							<li><a class="menu--link" href="/contact#Calendar">Local Bookings</a></li>
-						</ul>
-					</li>
-				</ul>
-			</nav>
-		</footer>
-		<script type="text/javascript" src="scripts.js"></script>
+		<!--#include virtual="/parts/footer.html"-->
 	</body>
 </html>
