@@ -1,0 +1,56 @@
+/* Display Container Styles */
+.splitdisplay {
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-between;
+	margin: auto;
+}
+
+.split__item {
+	margin: 10px 5px;
+}
+
+.artist__desc {
+	max-width: 500px;
+}
+
+
+.img {
+	max-height: 700px;
+	max-width: auto;
+}
+
+.img_caption{
+	font-size: 0.9em;
+	font-style: italic;
+}
+
+@media screen and (min-width: 550px) {
+	.main {
+		padding: 40px;
+	}
+
+	.img {
+		width: 500px;
+		max-height: 100%;
+	}
+}
+
+@media screen and (min-width: 1024px) {
+	.main {
+		padding: 0;
+	}
+
+	.splitdisplay {
+		flex-flow: row nowrap;
+		justify-content: space-around;
+	}
+
+	.img {
+		width: 400px;
+	}
+
+	.portfolio__container {
+		max-width: 60%;
+	}
+}

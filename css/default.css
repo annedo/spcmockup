@@ -47,6 +47,11 @@ img {
 	max-width: 100%;
 }
 
+textarea {
+	font-family: proxima-nova, sans-serif;
+	font-style: normal;
+	line-height: 1rem;
+}
 .main {
 	margin: 20px;
 }

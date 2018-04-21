@@ -1,0 +1,68 @@
+.contact__container {
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-between;
+}
+
+.contact__item {
+	width: 100%
+}
+
+#EmailForm {
+	display: flex;
+	flex-flow: column wrap;
+	margin: 25px auto 5px;
+	align-items: flex-start;
+}
+
+label {
+	margin-bottom: 5px;
+}
+
+input {
+	margin-bottom: 10px;
+	width: 100%;
+	padding: 5px;
+}
+
+textarea {
+	min-height: 100px;
+	width: 100%;
+	overflow: auto;
+	resize: both;
+	padding: 5px;
+	margin-bottom: 10px;
+}
+
+abbr {
+	text-decoration: none;
+	color: #D83434;
+}
+
+.form__submit {
+	background-color: #D83434;
+	color: #FFFFFF;
+	font-weight: 700;
+	border: none;
+	padding: 5px 10px;
+	font-size: 1.5em;
+	align-self: flex-end;
+}
+
+@media screen and (min-width: 1024px) {
+	.contact__container {
+		margin: -10px;
+		padding: 10px;
+	}
+	.contact__item {
+		width: 45%;
+		padding: 10px;
+		max-height: 600px;
+		overflow: auto;
+	}
+
+	#EmailForm {
+		max-width: 75%;
+		margin: 0;
+	}
+}
