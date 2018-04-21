@@ -1,3 +1,0 @@
-ErrorDocument 404 http://%{HTTP_HOST}/not-found.html
-AddType text/html .html
-AddHandler server-parsed .html
