@@ -59,13 +59,13 @@ html {
 h1 {
 	font-family: mrs-eaves-roman-small-caps, sans-serif;
 	font-size: 2.3rem;
-	margin-bottom: 0.7rem;
+	margin-bottom: 0.5rem;
 }
 
 h2 {
 	font-family: mrs-eaves-roman-small-caps, sans-serif;
 	font-size: 1.8rem;
-	margin-bottom: 0.5rem;
+	margin-bottom: 0.4rem;
 }
 
 h3 {
@@ -85,7 +85,7 @@ body {
 }
 
 p {
-  margin-bottom: 0.5rem;
+  margin-bottom: 1rem;
   line-height: 1.5rem;
 }
 
@@ -128,10 +128,22 @@ textarea {
 	color: #FFFFFF;
 	justify-content: space-between;
 	padding: 0 20px;
+	width: 100%;
+}
+
+.footer--regheight {
+	position: relative;
+}
+
+.footer--shiftheight {
+	position: absolute;
+	bottom: 0;
+	left: 0;
 }
 
 .header__logo {
 	max-width: 75px;
+	height: 100%;
 }
 
 .logo--img {
@@ -213,6 +225,7 @@ textarea {
 }
 
 .menu__submenu {
+	flex-flow: column wrap;
 	justify-content: center;
 	padding:5px;
 }
@@ -268,7 +281,7 @@ textarea {
 	padding: 10px;
 }
 
-.fa {
+a.fa {
 	color: #FFFFFF;
 	text-decoration: none;
 	font-size: 25px;
@@ -321,6 +334,11 @@ textarea {
 		padding: 20px;
 	}
 
+	/* IE alignment fix */
+	.header__nav .menu__item {
+		text-align: center;
+	}
+
 	/****Nav submenu styles****/
 	.menu__submenu {
 		flex-flow: column nowrap;
@@ -366,7 +384,7 @@ textarea {
 	}
 
 	.footer__sitecontents h2 {
-		padding: 10px 0 0;
+		padding: 25px 0 0;
 	}
 
 	.sitecontents__social {

@@ -25,6 +25,16 @@
 	font-style: italic;
 }
 
+.portfolio__container {
+	display: flex;
+	flex-flow: column wrap;
+}
+
+.portfolio__row {
+	display: flex;
+	flex-flow: row nowrap;
+}
+
 @media screen and (min-width: 550px) {
 	.main {
 		padding: 40px;

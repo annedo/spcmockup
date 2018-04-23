@@ -1,6 +1,6 @@
 /****************Main Content Styles******************/
 .hero {
-	background-image: url("/img/flowers.jpg");
+	background-image: url("../img/flowers.jpg");
 	background-repeat: no-repeat;
 	background-size: 100% auto;
 	background-size: cover;
@@ -37,7 +37,6 @@
 	width: 100%;
 	height: 250px;
 	overflow: hidden;
-	background-color: red;
 }
 
 .carousel__strip {
@@ -55,7 +54,6 @@
 }
 
 .carousel__control {
-	padding: 10px 0;
 	text-align: center;
 	font-size: 3rem;
 }
@@ -75,13 +73,10 @@
 		padding: 20px;
 	}
 
-	.carousel {
+	.carousel, .carousel__control, {
 		width: 75%;
 	}
 
-	.carousel__control {
-		width: 75%;
-	}
 }
 
 @media screen and (min-width: 768px) {

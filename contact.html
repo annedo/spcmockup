@@ -1,34 +1,37 @@
 <!DOCTYPE html>
-<html>
-<!--#config errmsg="[Error: SSI not enabled for this server]" -->
-	<!--#include virtual="/parts/head.html"-->
-	<link rel="stylesheet" href="/css/contact.css" type="text/css">
-</head>
-<body>
-	<!--#include virtual="/parts/header.html"-->
-		<main class="main">
-			<div class="contact__container">
-				<div class="contact__item">
-					<h2>Contact Me</h2>
-					<form id="EmailForm" action="#">
-						<label for="name">Full Name: <abbr title="required">*</abbr></label>
-						<input type="text" name="name" placeholder="Full Name" required>
-						<label for="email">Email: <abbr title="required">*</abbr></label>
-						<input type="text" name="email" placeholder="Email" required>
-						<label for="phone">Phone:</label>
-						<input type="text" name="phone" placeholder="Phone (optional)">
-						<label for="subject">Subject: <abbr title="required">*</abbr></label>
-						<input type="text" name="subject" placeholder="Subject" required>
-						<label for="message">Message: <abbr title="required" >*</abbr></label>
-						<textarea name="message" placeholder="Message" wrap="soft" required></textarea>
-						<button class="form__submit" type="submit">Submit</button>
-					</form>
-				</div>
-				<div class="contact__item" id="Calendar">
-					<script src="//simplybook.me/v2/widget/widget.js"></script>
-<script>var widget = new SimplybookWidget({"widget_type":"iframe","url":"https:\/\/mnphotography.simplybook.me","theme":"concise","theme_settings":{"light_font_color":"#ffffff","sb_base_color":"#667a94","booking_nav_bg_color":"#29253d","body_bg_color":"#ffffff","dark_font_color":"#ffffff","sb_busy":"#dad2ce","sb_available":"#667a94"},"timeline":"modern","datepicker":"top_calendar","is_rtl":false,"app_config":{"predefined":{"service":"2"}}});</script></div>
+<html lang="en">
+	<head>
+		<title>Melanie Nguyen Photography - Contact Form and Bookings</title>
+		<link rel="stylesheet" href="https://use.typekit.net/fuh4hqc.css">
+		<link rel="stylesheet" href="css/default.css" type="text/css">
+		<link rel="stylesheet" href="css/contact.css" type="text/css">
+	</head>
+	<body>
+	<header id="header" class="header menu--opened"></header>
+	<main class="main">
+		<div class="contact__container">
+			<div class="contact__item">
+				<h2>Contact Me</h2>
+				<form id="EmailForm" action="#">
+					<label for="name">Full Name: <abbr title="required">*</abbr></label>
+					<input type="text" name="name" placeholder="Full Name" required>
+					<label for="email">Email: <abbr title="required">*</abbr></label>
+					<input type="text" name="email" placeholder="Email" required>
+					<label for="phone">Phone:</label>
+					<input type="text" name="phone" placeholder="Phone (optional)">
+					<label for="subject">Subject: <abbr title="required">*</abbr></label>
+					<input type="text" name="subject" placeholder="Subject" required>
+					<label for="message">Message: <abbr title="required" >*</abbr></label>
+					<textarea name="message" placeholder="Message" wrap="soft" required></textarea>
+					<button class="form__submit" type="submit">Submit</button>
+				</form>
+			</div>
+			<div class="contact__item" id="Calendar">
+				<script src="//simplybook.me/v2/widget/widget.js"></script>
+				<script>var widget = new SimplybookWidget({"widget_type":"iframe","url":"https:\/\/mnphotography.simplybook.me","theme":"concise","theme_settings":{"light_font_color":"#ffffff","sb_base_color":"#667a94","booking_nav_bg_color":"#29253d","body_bg_color":"#ffffff","dark_font_color":"#ffffff","sb_busy":"#dad2ce","sb_available":"#667a94"},"timeline":"modern","datepicker":"top_calendar","is_rtl":false,"app_config":{"predefined":{"service":"2"}}});</script></div>
 			</div>
 		</main>
-		<!--#include virtual="/parts/footer.html"-->
-</body>
+		<footer id="footer" class="footer"></footer>
+		<script src="js/main.js" type="text/javascript"></script>
+	</body>
 </html>

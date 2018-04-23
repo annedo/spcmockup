@@ -1,8 +1,9 @@
-.featuredgrid {
+.newsgrid {
 	margin: -5px;
 	display: flex;
 	flex-flow: row wrap;
 	align-items: stretch;
+	width: 100%;
 }
 
 .coloroverlay {
@@ -11,7 +12,7 @@
 	max-height: 350px;
 }
 
-.featured__item {
+.news__item {
 	border: 1px solid #888888;
 	margin: 5px;
 	display: flex;
@@ -19,14 +20,20 @@
 }
 
 .mainfeature {
-	background: url("/img/news/spc.jpg");
+	background: url("../news/news_imgs/spc.jpg");
 	background-repeat: no-repeat;
 	background-position: center;
 	background-size: cover;
 }
 
-.featured__h2 {
+.news__h2 {
 	color: #D83434;
+}
+
+.news__h3--featured {
+	font-family: mrs-eaves-roman-small-caps, sans-serif;
+	font-size: 1.8rem;
+	margin-bottom: 0.4rem;
 }
 
 .news__img {
@@ -50,8 +57,16 @@
 		height: 98.7%;
 	}
 
-	.featured__container {
-		width: 45%
+	.newsgrid {
+		width: 90%;
+	}
+
+	.featuredgrid {
+		margin-bottom: 1rem;
+	}
+
+	.featuredgrid .news__container {
+		width: 50%
 	}
 
 	.news__img {
